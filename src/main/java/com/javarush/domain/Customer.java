@@ -16,7 +16,7 @@ public class Customer {
     private Short id;
 
     @ManyToOne
-    @Column(name = "store_id")
+    @JoinColumn(name = "store_id")
     private Store store;
 
     @Column(name = "first_name")
@@ -27,8 +27,8 @@ public class Customer {
 
     private String email;
 
-    @ManyToOne
-    @Column(name = "address_id")
+    @OneToOne
+    @JoinColumn(name = "address_id")
     private Address address;
 
     @Column(name = "active", columnDefinition = "BIT")

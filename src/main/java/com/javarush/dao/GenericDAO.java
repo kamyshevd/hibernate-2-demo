@@ -19,7 +19,7 @@ public abstract class GenericDAO<T>  {
     }
 
     protected Session getCurrentSession() {
-        return this.sessionFactory.getCurrentSession();
+        return sessionFactory.getCurrentSession();
     }
 
     public T getById(final Serializable id) {

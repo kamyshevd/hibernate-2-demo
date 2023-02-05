@@ -11,7 +11,7 @@ public class FilmText {
     private Short film_id;
 
     @OneToOne
-    @Column(name = "film_id")
+    @JoinColumn(name = "film_id")
     private Film film;
 
     @Column(name = "title")

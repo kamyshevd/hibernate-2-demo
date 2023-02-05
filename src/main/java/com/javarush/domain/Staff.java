@@ -32,7 +32,7 @@ public class Staff {
     private String email;
 
     @ManyToOne
-    @Column(name = "store_id")
+    @JoinColumn(name = "store_id")
     private Store store;
 
     @Column(name = "active", columnDefinition = "BIT")
