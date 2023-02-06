@@ -8,7 +8,7 @@ import org.hibernate.annotations.Type;
 public class FilmText {
     @Id
     @Column(name = "film_id")
-    private Short film_id;
+    private Short id;
 
     @OneToOne
     @JoinColumn(name = "film_id")
@@ -22,11 +22,11 @@ public class FilmText {
     private String description;
 
     public Short getFilm_id() {
-        return film_id;
+        return id;
     }
 
-    public void setFilm_id(Short film_id) {
-        this.film_id = film_id;
+    public void setFilm_id(Short id) {
+        this.id = id;
     }
 
     public Film getFilm() {

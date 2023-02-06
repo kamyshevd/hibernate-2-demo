@@ -1,6 +1,7 @@
 package com.javarush.domain;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
@@ -25,6 +26,7 @@ public class Rental {
     private Customer customer;
 
     @Column(name = "return_date")
+    @UpdateTimestamp
     private LocalDateTime returnDate;
 
     @ManyToOne

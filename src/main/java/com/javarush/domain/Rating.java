@@ -8,6 +8,10 @@ public enum Rating {
     NC17("NC-17");
 
 
+    public String getValue() {
+        return value;
+    }
+
     private final String value;
 
     Rating(String value) {
